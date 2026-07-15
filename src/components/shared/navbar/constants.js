@@ -1,10 +1,10 @@
 export const SOCIAL_LINKS = [
-  { name: "Twitter", icon: "TwitterLogoIcon" },
-  { name: "Facebook", icon: "FacebookLogoIcon" },
-  { name: "Pinterest", icon: "PinterestLogoIcon" },
-  { name: "Reddit", icon: "RedditLogoIcon" },
-  { name: "YouTube", icon: "YoutubeLogoIcon" },
-  { name: "Instagram", icon: "InstagramLogoIcon" },
+  { name: "Twitter", icon: "TwitterLogoIcon", fill: true },
+  { name: "Facebook", icon: "FacebookLogoIcon", fill: true },
+  { name: "Pinterest", icon: "PinterestLogoIcon", fill: true },
+  { name: "Reddit", icon: "RedditLogoIcon", fill: true },
+  { name: "YouTube", icon: "YoutubeLogoIcon", fill: true },
+  { name: "Instagram", icon: "InstagramLogoIcon", fill: false },
 ];
 
 export const SUPPORT_LINKS = [

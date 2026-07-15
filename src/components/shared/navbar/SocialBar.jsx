@@ -7,7 +7,7 @@ import {
   TwitterLogoIcon,
   YoutubeLogoIcon,
 } from "@phosphor-icons/react";
-import { SOCIAL_LINKS, NAVBAR } from "./constants";
+import { NAVBAR, SOCIAL_LINKS } from "./constants";
 
 const iconMap = {
   TwitterLogoIcon,
@@ -20,22 +20,32 @@ const iconMap = {
 
 const SocialBar = () => {
   return (
-    <div className="bg-secondary-700 py-4 border-b border-gray-500">
+    <div className="bg-secondary-700 py-4 border-b border-gray-500/md">
       <div className="max-w-[70%] mx-auto flex items-center justify-between">
-        <p className="text-gray-00 body-small-400">{NAVBAR.social.welcomeText}</p>
+        <p className="text-gray-00 body-small-400">
+          {NAVBAR.social.welcomeText}
+        </p>
 
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-3">
-            <p className="text-gray-00 body-small-400">{NAVBAR.social.followText}</p>
+            <p className="text-gray-00 body-small-400">
+              {NAVBAR.social.followText}
+            </p>
             <div className="flex items-center gap-3">
-              {SOCIAL_LINKS.map(({ name, icon }) => {
+              {SOCIAL_LINKS.map(({ name, icon, fill }) => {
                 const Icon = iconMap[icon];
-                return <Icon key={name} className="text-gray-00" />;
+                return (
+                  <Icon
+                    key={name}
+                    weight={fill ? "fill" : "regular"}
+                    className="text-gray-00"
+                  />
+                );
               })}
             </div>
           </div>
 
-          <div className="h-6 w-0.5 bg-gray-500" />
+          <div className="h-6 w-0.5 bg-gray-500/md" />
 
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-1.5">

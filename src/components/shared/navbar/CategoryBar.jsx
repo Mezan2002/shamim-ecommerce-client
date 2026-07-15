@@ -6,7 +6,7 @@ import {
   MapPinLineIcon,
   PhoneCallIcon,
 } from "@phosphor-icons/react";
-import { SUPPORT_LINKS, CONTACT, NAVBAR } from "./constants";
+import { CONTACT, NAVBAR, SUPPORT_LINKS } from "./constants";
 
 const iconMap = {
   MapPinLineIcon,
@@ -17,7 +17,7 @@ const iconMap = {
 
 const CategoryBar = () => {
   return (
-    <div className="py-4 border-b border-gray-600 bg-gray-00">
+    <div className="py-4 border-b border-gray-100 bg-gray-00">
       <div className="max-w-[70%] mx-auto flex items-center justify-between">
         <div className="flex items-center gap-6">
           <div className="bg-gray-50 py-3.5 px-6 inline-flex items-center gap-2">
